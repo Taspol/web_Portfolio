@@ -1,9 +1,10 @@
 import Image from "next/image";
+import Greeting from "@/component/Greeting";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div>Hello, my name is Pan</div>
+    <main className="flex min-h-screen flex-col items-center justify-between p-24 h-full">
+        <Greeting/>
     </main>
   );
 }
