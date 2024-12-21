@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Greeting() {
     return (
-        <div className="flex m-5 h-80 items-center w-full bg-white text-center rounded-3xl">
+        <div className="flex m-5 h-80 items-center w-[80vw] bg-white text-center rounded-3xl b-0">
             <div className="flex ml-[10vh]">
                 <Image 
                     src="/img/gesture.png" 
