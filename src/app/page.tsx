@@ -3,6 +3,8 @@ import Greeting from "@/component/Greeting";
 import Aboutme from "@/component/Aboutme";
 import Skills from "@/component/Skills";
 import Experience from "@/component/Experience";
+import Education from "@/component/Education";
+import Contact from "@/component/Contact";
 
 export default function Home() {
   return (
@@ -12,8 +14,12 @@ export default function Home() {
             <Aboutme/>
             <Skills/>
         </div>
-        <div>
+        <div className="flex">
             <Experience/>
+            <div>
+                <Education/>
+                <Contact/>
+            </div>
         </div>
     </main>
   );
