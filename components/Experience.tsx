@@ -1,3 +1,5 @@
+import { BGPattern } from "@/components/ui/bg-pattern";
+
 export default function Experience() {
   const experiences = [
     {
@@ -27,8 +29,16 @@ export default function Experience() {
   ];
 
   return (
-    <section id="experience" className="py-20">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="experience" className="relative py-20 bg-white dark:bg-zinc-900">
+      <BGPattern 
+        variant="grid" 
+        mask="fade-edges" 
+        className="hidden dark:block" 
+        fill="rgba(255, 255, 255, 0.05)"
+        size={32}
+        suppressHydrationWarning
+      />
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <h2 className="text-4xl font-bold text-zinc-900 dark:text-white mb-4 text-center">
           Professional Experience
         </h2>

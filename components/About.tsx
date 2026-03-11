@@ -1,7 +1,17 @@
+import { BGPattern } from "@/components/ui/bg-pattern";
+
 export default function About() {
   return (
-    <section id="about" className="py-20 bg-zinc-50 dark:bg-zinc-900/50">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="about" className="relative py-20 bg-zinc-50 dark:bg-zinc-900/50">
+      <BGPattern 
+        variant="grid" 
+        mask="fade-edges" 
+        className="hidden dark:block" 
+        fill="rgba(255, 255, 255, 0.05)"
+        size={32}
+        suppressHydrationWarning
+      />
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <h2 className="text-4xl font-bold text-zinc-900 dark:text-white mb-4 text-center">
           About Me
         </h2>

@@ -1,3 +1,5 @@
+import { BGPattern } from "@/components/ui/bg-pattern";
+
 export default function Projects() {
   const projects = [
     {
@@ -34,6 +36,7 @@ export default function Projects() {
       tech: ["Python", "Computer Vision", "GIS", "React"],
       github: "#",
       demo: "#",
+      achievement: "Finalist"
     },
     {
       title: "6-DOF Robotic Arm Control",
@@ -42,6 +45,7 @@ export default function Projects() {
       tech: ["ROS", "Python", "Inverse Kinematics", "RViz", "Gazebo"],
       github: "#",
       demo: "#",
+      achievement: "Internship Project - HiveGround Robotics",
     },
     {
       title: "School Satellite Program",
@@ -55,8 +59,16 @@ export default function Projects() {
   ];
 
   return (
-    <section id="projects" className="py-20 bg-zinc-50 dark:bg-zinc-900/50">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="projects" className="relative py-20 bg-zinc-50 dark:bg-zinc-900/50">
+      <BGPattern 
+        variant="grid" 
+        mask="fade-edges" 
+        className="hidden dark:block" 
+        fill="rgba(255, 255, 255, 0.05)"
+        size={32}
+        suppressHydrationWarning
+      />
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <h2 className="text-4xl font-bold text-zinc-900 dark:text-white mb-12 text-center">
           Featured Projects
         </h2>
@@ -68,7 +80,7 @@ export default function Projects() {
             >
               {project.achievement && (
                 <div className="mb-3">
-                  <span className="inline-block px-3 py-1 text-sm bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-400 rounded-full font-medium">
+                  <span className="inline-block px-3 py-1 text-sm bg-yellow-50 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-400 rounded-full font-medium">
                     {project.achievement}
                   </span>
                 </div>

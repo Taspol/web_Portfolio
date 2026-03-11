@@ -11,7 +11,7 @@ export default function AiChat() {
   const [messages, setMessages] = useState<Message[]>([
     {
       role: "assistant",
-      content: "Hi! I'm an AI assistant for Taspol's portfolio. Feel free to ask me about his experience, skills, projects, or achievements!",
+      content: "Hi! I'm an AI assistant for Taspol's portfolio. Feel free to ask me about Taspol's experience, skills, projects, or achievements!",
     },
   ]);
   const [input, setInput] = useState("");

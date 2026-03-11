@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import { BGPattern } from "@/components/ui/bg-pattern";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -22,8 +23,16 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-20">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="contact" className="relative py-20 bg-white dark:bg-zinc-900">
+      <BGPattern 
+        variant="grid" 
+        mask="fade-edges" 
+        className="hidden dark:block" 
+        fill="rgba(255, 255, 255, 0.05)"
+        size={32}
+        suppressHydrationWarning
+      />
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <h2 className="text-4xl font-bold text-zinc-900 dark:text-white mb-12 text-center">
           Get In Touch
         </h2>
